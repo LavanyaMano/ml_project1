@@ -11,9 +11,6 @@ def signal_handler():
     # Signal handling code goes here
     print("Signal received")
 
-# Register signal handler
-st.server.server.Server.on_stop(signal_handler)
-
 # Run Streamlit app
 st.write("Hello, Streamlit!")
 
