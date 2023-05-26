@@ -44,7 +44,7 @@ def predict_datapoint():
         st.write(results[0])
 
 def main():
-    st.sidebar.title('Data Science Projects')
+    st.sidebar.title('Data Science Project - 1 ')
     st.sidebar.button('Predict Math Score')
     app_mode = 'Predict Math Score'
     predict_datapoint()
