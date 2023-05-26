@@ -4,6 +4,19 @@ import pandas as pd
 
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
+import signal
+import streamlit as st
+
+def signal_handler():
+    # Signal handling code goes here
+    print("Signal received")
+
+# Register signal handler
+st.server.server.Server.on_stop(signal_handler)
+
+# Run Streamlit app
+st.write("Hello, Streamlit!")
+
 
 application=Flask(__name__)
 
